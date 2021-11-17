@@ -24,7 +24,7 @@
 			<property name="hibernate.format_sql" value="true"/>
 			
 		</properties>
-	</persistence-unit>
 
+	</persistence-unit>
 
 </persistence>

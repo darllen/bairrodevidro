@@ -32,7 +32,7 @@ public class ComentarioBusiness {
 
     }
 
-    public void listaComentario() {
+    public ArrayList<Comentario> listaComentario() {
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("bairrodevidro");
         EntityManager em = emf.createEntityManager();
@@ -46,11 +46,14 @@ public class ComentarioBusiness {
 //                    .setParameter("tipo", comentario.getTipo()).getResultList();
 
             System.out.println(listarComentario);
+            return listarComentario;
+
         } catch (NoResultException e) {
             System.out.println("Comentário não encontrado!");
-
+            return null;
         }
         //em.close();
+
 
     }
 
