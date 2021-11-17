@@ -1,0 +1,217 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap')
+	;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+     font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to right, #99ebe9, #cafcfb);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*MENU DE NAVEGAÇÃO*/
+nav {
+    width: 100%;
+    height: 100px;
+    margin-right: 10%;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0abbb5;
+}
+
+li{
+    list-style: none;
+}
+
+.opcoes-nav{
+    display: flex; 
+    margin-left: 40px;   
+}
+
+.logo {
+    height: 100px;
+    width: 300px;
+   
+}
+
+.lista {
+    height: 100px;
+    margin-left: 30px; 
+    margin-top: 50px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.efeito{
+    width: 150px;
+    /*ESTILO PALAVRA*/
+    letter-spacing: 4px; 
+    margin-left: 40px; 
+    color: #0abbb5;
+    font-weight: bold;
+    text-transform: uppercase;
+    /*FIM ESTILO PALAVRA*/
+    /*ESTILO BOT�O*/
+    background:transparent;
+    border: 1px solid #6adbd9;
+    border-radius: 50px;
+   padding: 10px 50px 10px 50px;
+    align-items: center;
+    /*FIM ESTILO BOT�O*/
+}
+
+.efeito:hover {
+    background-color: rgba(248, 248, 255, 0.4);      
+}
+
+#tela-selecionada{
+    background-color: rgba(248, 248, 255, 0.4);
+}
+
+
+/*FIM MENU DE NAVEGAÇÃO*/
+
+/*RODAP�*/
+.opcoes-footer {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+.footer {
+	width: 100%;
+	height: auto;
+	background-color: #02474e;
+	margin-top: 10%;
+	display: flex;
+	color: white;
+	text-align: center;
+}
+
+.lista-footer {
+	display: flex;
+	margin-left: 80px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #0abbb5;
+	list-style: none;
+	}
+	
+.efeito-footer {
+	width: 30%;
+	background-color: transparent;
+	color: #0abbb5;
+	border-style: none;
+	font-size: 25px;
+	margin-top: 10px;
+	margin-left: 100px;
+	padding: 10px 65px 10px 25px;
+	align-items: center;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+.e-empresa {
+	width: 300px;
+	height: 80px;
+	margin-left: 130px;
+	margin-top: 20px;
+	background-color: #099e9d;
+	border-radius: 40px 40px 0 0;
+}
+.frasefooter{
+	
+	color: white;
+	
+	
+}
+
+.frase-footer {
+	background-color: #099E9D;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 2px;
+	font-size: 14px;
+	
+	padding-bottom: 20px;
+	border-radius: 40px 40px 0 0;
+	margin-top: 20px;
+}
+/*FIM RODAP�*/
+
+.quadrado{
+    background-color: white;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+    padding: 41.8vh;
+    border-radius: 2%;
+    align-items:flex-start;
+}
+.textostar{
+	margin-top: -50px;
+	text-align: justify;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.textostar2{
+	margin-top: -50px;
+	text-align: justify;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.caracteristica{
+    display: flex;
+    justify-content: center;
+    margin-top: -30%;
+    padding: 0%;
+}
+
+.star img{
+    height: 5vh;
+}
+.star2 img{
+    height: 5vh;
+}
+.star{
+	margin-bottom: 50px;
+}
+.star2{
+    margin-left: 40vw;
+    margin-bottom: 50px;
+}
+.star>h2{
+	margin-left: 1.5%;
+}
+.star2>h2{
+padding-left: 25px;
+}
+.conteudo{
+    margin-top: 10vh;
+}
+
+hr{
+	margin-left: 5%;
+	color:grey;
+    height:1px;
+    width:90%;
+}

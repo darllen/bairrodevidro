@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <h:outputStylesheet library="css" name="pbairro.css"/>
+    <title>Pesquise o Bairro</title>
+    <h:outputStylesheet library="imagens" name="icone1.png"/>
+</h:head>
+
+<h:body>
+    <div class="opcoes-nav">
+        <h:graphicImage styleClass="logonav" library="imagens" name="logo-cortada.png"/>
+        <h:panelGrid styleClass="lista" columns="3">
+            <h:form>
+                <h:commandLink styleClass="efeito" value="home" action="home.xhtml"/>
+                <h:commandLink styleClass="efeito" value="login" action="login.xhtml"/>
+                <h:commandLink styleClass="efeito" value="sobre"/>
+            </h:form>
+        </h:panelGrid>
+    </div>
+
+    <div class="main">
+        <!--TOPO DA PÁGINA
+        <div class="topo-pag">
+            <h:outputText styleClass="title" value="#{classe.atributo}"/>
+        </div>-->
+        <!--TOPO DA PÁGINA-->
+        <div class="topo-pag">
+            <div class="title">Cohab</div>
+        </div>
+        <!--MENU DE NAVEGAÇÃO LATERAL-->
+        <div class="container">
+            <div class="nav-sidebar">
+                <div class="linksLateral">
+                    <h:form>
+                        <h:outputLink styleClass="link">
+                            <div class="opcao">
+                                <h:graphicImage styleClass="icon" library="imagens" name="saud.png"/>
+                                <h:outputLabel value="Saúde Pública"/>
+                            </div>
+                            <f:verbatim><br/></f:verbatim>
+                        </h:outputLink>
+                    </h:form>
+                    <h:form>
+                        <h:outputLink styleClass="link">
+                            <div class="opcao">
+                                <h:graphicImage styleClass="icon" library="imagens" name="segu.png"/>
+                                <h:outputLabel value="Segurança Pública"/>
+                            </div>
+                            <f:verbatim><br/></f:verbatim>
+                        </h:outputLink>
+                    </h:form>
+                    <h:form>
+                        <div class="opcao">
+                            <h:outputLink styleClass="link">
+                                <h:graphicImage styleClass="icon" library="imagens" name="limpe.png"/>
+                                <h:outputLabel value="Limpeza Urbana "/>
+                            </h:outputLink>
+                        </div>
+                        <f:verbatim><br/></f:verbatim>
+                    </h:form>
+                    <h:form>
+                        <h:outputLink styleClass="link">
+                            <div class="opcao">
+                                <h:graphicImage styleClass="icon" library="imagens" name="averde.png"/>
+                                <h:outputLabel value="Área Verde"/>
+                            </div>
+                            <f:verbatim><br/></f:verbatim>
+                        </h:outputLink>
+                    </h:form>
+                    <h:form>
+                        <h:outputLink styleClass="link">
+                            <div class="opcao">
+                                <h:graphicImage styleClass="icon" library="imagens" name="ilumi.png"/>
+                                <h:outputLabel value="Iluminação"/>
+                            </div>
+                            <f:verbatim><br/></f:verbatim>
+                        </h:outputLink>
+                    </h:form>
+                </div>
+            </div>
+            <!-- FIM MENU DE NAVEGAÇÃO LATERAL -->
+
+            <div class="container-2">
+                <h2 class="title-2">Saúde Publica</h2>
+                <h:outputLink value="#addcoment">
+                    <h:graphicImage styleClass="icone-add" library="imagens" name="add.png"/>
+                </h:outputLink>
+
+                <!-- TABELA -->
+                <div class="tabelacoment">
+                    <h:form>
+                        <div class="card">
+                            <p:dataTable var="coment" value="#{comentarioMB.listaComentarios}">
+                                <p:column headerText="Comentário">
+                                    <h:outputText value="#{coment.comentario}" />
+                                </p:column>
+
+<!--                                <p:column headerText="Name">-->
+<!--                                    <h:outputText value="#{product.name}" />-->
+<!--                                </p:column>-->
+
+<!--                                <p:column headerText="Category">-->
+<!--                                    <h:outputText value="#{product.category}" />-->
+<!--                                </p:column>-->
+
+<!--                                <p:column headerText="Quantity">-->
+<!--                                    <h:outputText value="#{product.quantity}" />-->
+<!--                                </p:column>-->
+                            </p:dataTable>
+                        </div>
+                    </h:form>
+                </div>
+                <!-- FIM TABELA -->
+
+                <!-- CAIXA COMENTÁRIO -->
+                <div class="conteudo">
+                    <div class="card">
+                        <h:form>
+                            <h3 id="addcoment" class="p-mt-0">Adicionar comentário</h3>
+                            <p:textEditor widgetVar="editor1" value="#{comentarioMB.comentario.comentario}" height="150"/>
+                            <f:facet name="toolbar">
+                               <span class="ql-formats">
+                                   <button class="ql-bold"></button>
+                                   <button class="ql-italic"></button>
+                                   <button class="ql-underline"></button>
+                               </span>
+                               <span class="ql-formats">
+                                   <select class="ql-font"></select>
+                                   <select class="ql-size"></select>
+                               </span>
+                            </f:facet>
+                            <p:commandButton action="#{comentarioMB.addcoment}">
+                                <f:param name="tipo" value="CB" />
+<!--                                <f:setPropertyActionListener target="#{arquivosController.arquivoSelecionado}" value="#{arquivo}" />-->
+                            </p:commandButton>
+                            <!-- <p:button value="Disabled" disabled="true"/>-->
+                        </h:form>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+<div class="footer">
+
+<h:graphicImage styleClass="logo" library="imagens"
+                name="logo-cortada.png"/>
+<h:form>
+    <div class="lista-footer">
+
+        <h:panelGrid styleClass="opcoes-footer" columns="3">
+
+            <h:commandLink styleClass="efeito-footer" value="home"
+                           action="home.xhtml"/>
+            <h:commandLink styleClass="efeito-footer" value="login"
+                           action="login.xhtml"/>
+            <h:commandLink styleClass="efeito-footer" value="sobre"
+                           action="sobre.xhtml"/>
+
+        </h:panelGrid>
+
+    </div>
+</h:form>
+<h:form styleClass="frase-footer">
+    <h:panelGrid>
+        <div>
+            <h:commandLink class="frasefooter"
+                           value="É empresa?" action="sobre.xhtml"/>
+            <f:verbatim>
+                <br/>
+            </f:verbatim>
+            <h:commandLink class="frasefooter"
+                           value="Entre em contato" action="sobre.xhtml"/>
+        </div>
+    </h:panelGrid>
+</h:form>
+
+</div>
+</h:body>
+</html>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"	
+    xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<h:outputStylesheet library="css" name="login.css" />
+	<title>Login</title>
+	<h:outputStylesheet library="imagens" name="icone1.png" />
+</h:head>
+
+<h:body>
+	<div class="opcoes-nav">
+		<h:form>
+		<h:panelGrid styleClass="lista" columns="5">
+				<h:graphicImage styleClass="logonav" library="imagens" name="logo-cortada.png" />
+				<h:commandLink styleClass="efeito" value="home" action="home.xhtml" />
+				<h:commandLink styleClass="efeito" value="login" action="login.xhtml" />
+				<h:commandLink styleClass="efeito" value="sobre" action="sobre.xhtml" />
+		</h:panelGrid>
+		</h:form>
+	</div>
+
+	<h:form styleClass="form">
+		<div class="card">
+			<div class="conteudocard">
+				<h:graphicImage styleClass="icone-login" library="imagens" name="img.jpeg" />
+				<h2 id="title_login">Login</h2><br />
+			</div>
+			<h:outputText class="textinho" value="Faça o login para experimentar os mais completos conteúdos" /><br></br>
+
+			<div class="card_group">
+				<h:panelGrid styleClass="alinharinputs" columns="2">
+					<h:outputLabel value="Digite seu e-mail: " /><br />
+					<h:inputText styleClass="inputs" maxlength="30" size="20"/><br /><br /><br />
+					<h:outputLabel value="Digite sua senha: " /><br />
+					<h:inputSecret styleClass="inputs" maxlength="15" size="20" />
+				</h:panelGrid>
+
+				<div class="lembrar">
+					<h:panelGrid columns="2">
+						<h:selectManyCheckbox>
+							<f:selectItem itemValue="L" itemLabel="" />
+						</h:selectManyCheckbox>
+						<h:outputLabel id="lembrar" value="Lembrar senha" />
+					</h:panelGrid>
+				</div>
+
+				<div>
+					<h:commandButton styleClass="button" value="ENTRAR" action="home.xhtml" />
+				</div><br></br>
+
+				<div>
+					<h:commandLink class="cadastrar" value="Ainda não possui uma conta?" action="cadastro.xhtml" /><br />
+				</div>
+			</div>
+		</div>
+	</h:form>
+
+<!--RODAPÉ-->
+	<div class="footer">
+		<h:graphicImage styleClass="logof" library="imagens" name="logo-cortada.png" />
+		<h:form>
+			<div class="lista-footer">
+				<h:panelGrid styleClass="opcoes-footer" columns="3">
+					<h:commandLink styleClass="efeito-footer" value="home" action="home.xhtml" />
+					<h:commandLink styleClass="efeito-footer" value="login" action="login.xhtml" />
+					<h:commandLink styleClass="efeito-footer" value="sobre" action="sobre.xhtml" />
+				</h:panelGrid>
+			</div>
+		</h:form>
+
+		<h:form styleClass="frase-footer">
+			<h:panelGrid>
+				<div>
+					<h:commandLink class="frasefooter" value="É empresa?" action="sobre.xhtml" />
+
+					<h:commandLink class="frasefooter" value="Entre em contato" action="sobre.xhtml" />
+				</div>
+			</h:panelGrid>
+		</h:form>
+	</div>
+	<!--FIM RODAPÉ-->
+
+</h:body>
+</html>

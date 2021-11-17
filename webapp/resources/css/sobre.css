@@ -1,0 +1,317 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap')
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: linear-gradient(to right, #99ebe9, #cafcfb);
+}
+
+a {
+	text-decoration: none;
+}
+
+/*MENU DE NAVEGAÃ‡ÃƒO*/
+nav {
+	width: 100%;
+	height: 100px;
+	margin-right: 10%;
+	display: flex;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #0abbb5;
+}
+
+li {
+	list-style: none;
+}
+
+.opcoes-nav {
+	display: flex;
+}
+
+.logonav {
+	height: 100px;
+	width: 300px;
+	margin-left: 4%;
+	margin-right: 200px;
+	padding-left: 10px;
+	padding-right: 300px;
+}
+
+.logo {
+	height: 100px;
+	width: 300px;
+	margin-left: 5%;
+}
+
+.lista {
+	height: 100px;
+	margin-left: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.efeito {
+	width: 150px;
+	/*ESTILO PALAVRA*/
+	letter-spacing: 4px;
+	margin-left: 25px;
+	color: #0abbb5;
+	font-weight: bold;
+	text-transform: uppercase;
+	/*FIM ESTILO PALAVRA*/
+	/*ESTILO BOTÃƒO*/
+	background: transparent;
+	border: 1px solid #6adbd9;
+	border-radius: 50px;
+	 padding: 10px 50px 10px 50px;
+	align-items: center;
+	/*FIM ESTILO BOTÃƒO*/
+}
+
+.efeito:hover {
+	background-color: rgba(248, 248, 255, 0.4);
+}
+
+#tela-selecionada {
+	background-color: rgba(248, 248, 255, 0.4);
+}
+
+/*FIM MENU DE NAVEGAÃ‡ÃƒO*/
+
+/*RODAPÃ‰*/
+
+/*FIM RODAPÃ‰*/
+
+/*TOPO DA PÃ�GINA*/
+.topo-pag {
+	width: 100%;
+	height: 150px;
+}
+
+.title {
+	width: 100%;
+	height: 150px;
+	padding-top: 8vh;
+	/*Estilo do texto*/
+	font-size: 40px;
+	color: #0abbb5;
+	text-align: center;
+	text-transform: uppercase;
+}
+/*FIM TOPO DA PÃ�GINA*/
+
+/*FOTOS DOS PATROCINADORES*/
+#fotos-projetos {
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.foto {
+	width: 250px;
+}
+/*FIM FOTOS DOS PATROCINADORES*/
+.container-a {
+	width: 100%;
+	height: 200px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.sobre-start {
+	width: 500px;
+	margin-right: 100px;
+}
+
+.titulo-sobre {
+	color: #099e9d;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.texto-sobre {
+	text-align: center
+}
+
+.subtitulo-sobre {
+	color: #0abbb5;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+/*PARTE DE DESENVOLVEDORES*/
+.desenvolvedores {
+	color: #099e9d;
+	font-size: 36px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+
+.container-bb {
+	display: flex;
+}
+
+.card-individual {
+	width: 600px;
+	height: 150px;
+	box-shadow: 1px 1px 5px;
+	background-color: #099e9d;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+
+.foto-pessoa {
+	width: 120px;
+	height: 120px;
+	margin-top: 15px;
+	margin-left: 15px;
+	border-radius: 50%;
+	-webkit-filter: drop-shadow(1px 1px 2px #222);
+	filter: drop-shadow(1px 1px 2px #222);
+	/*PERGUNTAR SE A GALERA ACHA LEGAL*/
+}
+
+.informacoes {
+	width: 400px;
+	margin-left: 40px;
+	color: #cafcfb;
+}
+
+.lista-icones {
+	display: flex;
+	margin-left: 100px;
+}
+
+.lista-icones a {
+	margin-left: 50px;
+	margin-top: 15px;
+}
+
+.lista-icones a img {
+	height: 4vh;
+}
+
+.botao-contato {
+	margin-top: 10px;
+}
+
+.botao-contato-a {
+	/*ESTILO BOTÃƒO*/
+	width: 100px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid #6adbd9;
+	border-radius: 50px;
+	align-items: center;
+	/*FIM ESTILO BOTÃƒO*/
+	/*ESTILO PALAVRA*/
+	margin-left: 15px;
+	color: #cafcfb;
+	/*FIM ESTILO PALAVRA*/
+}
+
+.botao-contato-a:hover {
+	background-color: rgba(248, 248, 255, 0.2);
+}
+
+.outcima{
+	
+	margin-bottom: -40px;
+	
+}
+
+.icon {
+	height: 40px;
+	margin-left: 15px;
+	margin-top: 30px;
+}
+
+.opcoes-footer {
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: -80px;
+	margin-bottom: -50px;
+}
+
+.footer {
+	width: 100%;
+	height: 120px;
+	background-color: #02474e;
+	margin-top: 10%;
+	display: flex;
+	color: white;
+	text-align: center;
+}
+
+.lista-footer {
+	display: flex;
+	margin-left: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #0abbb5;
+	list-style: none;
+}
+
+.efeito-footer {
+	width: 30%;
+	background-color: transparent;
+	color: #0abbb5;
+	border-style: none;
+	font-size: 25px;
+	margin-top: 10px;
+	margin-left: 100px;
+	padding: 10px 65px 10px 25px;
+	align-items: center;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.e-empresa {
+	width: 300px;
+	height: 80px;
+	margin-left: 130px;
+	margin-top: 20px;
+	background-color: #099e9d;
+	border-radius: 40px 40px 0 0;
+}
+
+.frasefooter {
+	color: white;
+	text-decoration: none;
+}
+
+.frase-footer {
+	background-color: #099E9D;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin-left: 30px;
+	padding-bottom: 20px;
+	border-radius: 40px 40px 0 0;
+	margin-top: 20px;
+}

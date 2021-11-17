@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<h:outputStylesheet library="css" name="home.css" />
+	<title>Bairro de Vidro</title>
+	<h:outputStylesheet library="imagens" name="icone1.png" />
+</h:head>
+
+<h:body>
+
+	<!--MENU DE NAVEGAÇÃO-->
+	<div class="opcoes-nav">
+		<div class="listinha">
+			<h:form>
+				<h:panelGrid styleClass="lista" columns="3">
+					<h:commandLink styleClass="efeito" value="home" action="home.xhtml" />
+					<h:commandLink styleClass="efeito" value="login" action="login.xhtml" />
+					<h:commandLink styleClass="efeito" value="sobre" action="sobre.xhtml" />
+				</h:panelGrid>
+			</h:form>
+		</div>
+	</div>
+	<!--FIM MENU DE NAVEGAÇÃO-->
+
+	<div class="container">
+		<!--INTRODUÇÃO-->
+		<div class="logo">
+			<h:graphicImage library="imagens" name="logo-ajeitada.png" />
+			<div class="textolegal">
+				<h1>Bem Vindo</h1>
+				<h:outputText
+					value="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Libero est quisquam autem molestiae consequatur illo. Aperiam
+					possimus voluptatem officia aliquam architecto quaerat voluptatum
+					dicta, minus eos, amet laudantium atque autem?" />
+			</div>
+		</div>
+		<!-- FIM INTRODUÇÃO -->
+
+		<div class="busca">
+			<!-- PESQUISA POR BAIRRO -->
+			<div class="bairro">
+				<h2>Pesquise o bairro</h2>
+
+				<h:form>
+					<h:selectOneMenu styleClass="caixap">
+						<f:selectItem itemLabel="Boa Viagem" itemValue="BV"/>
+						<f:selectItem itemLabel="Boa Vista" itemValue="BV" />
+						<f:selectItem itemLabel="Casa Amarela" itemValue="CA" />
+						<f:selectItem itemLabel="Cohab" itemValue="CO" />
+						<f:selectItem itemLabel="Derby" itemValue="DE" />
+						<f:selectItem itemLabel="Espinheiro" itemValue="ES" />
+						<f:selectItem itemLabel="Jardim São Paulo" itemValue="JSP"/>
+						<f:selectItem itemLabel="Torre" itemValue="TO" />
+						<f:selectItem itemLabel="Mustardinha" itemValue="MU" />
+					</h:selectOneMenu>
+
+					<h:commandButton styleClass="btn" action="pbairro.xhml">
+						<f:param name="buscar" value="Buscar" />
+					</h:commandButton>
+				</h:form>
+			</div>
+			<!-- FIM PESQUISA POR BAIRRO -->
+
+			<!--PESQUISA POR CARACTERÍSTICA-->
+			<div class="caracteristica">
+				<h2>Pesquisa por característica</h2>
+
+				<div class="section1">
+					<h:panelGrid columns="3">
+						<h:outputLink value="pcaracteristicas.xhtml">
+							<h:graphicImage library="imagens" name="limp.png" />
+						</h:outputLink>
+						
+						<h:outputLink value="pcaracteristicas2.xhtml">
+							<h:graphicImage  library="imagens" name="ilum.png" />
+						</h:outputLink>
+						<h:outputLink value="pcaracteristicas3.xhtml">
+							<h:graphicImage styleClass="direita" library="imagens" name="seg.png" />
+						</h:outputLink>
+					</h:panelGrid>
+				</div>
+			
+				<div class="section2">
+					<h:outputLink value="pcaracteristicas4.xhtml">
+						<h:graphicImage library="imagens" name="sau.png" />
+					</h:outputLink>
+					
+					<h:outputLink  value="pcaracteristicas5.xhtml">
+						<h:graphicImage styleClass="direita" library="imagens" name="averd.png" />
+					</h:outputLink>
+				</div>
+			</div>
+			<!--FIM PESQUISA POR CARACTERÍSTICA-->
+		</div>
+	</div>
+
+
+	<!--RODAPÉ-->
+	<div class="footer">
+		<h:graphicImage styleClass="logo" library="imagens" name="logo-cortada.png" />
+		<h:form>
+			<div class="lista-footer">
+				<h:panelGrid styleClass="opcoes-footer" columns="3">
+					<h:commandLink styleClass="efeito-footer" value="home" action="home.xhtml" />
+					<h:commandLink styleClass="efeito-footer" value="login" action="login.xhtml" />
+					<h:commandLink styleClass="efeito-footer" value="sobre" action="sobre.xhtml" />
+				</h:panelGrid>
+			</div>
+		</h:form>
+
+		<h:form styleClass="frase-footer">
+			<h:panelGrid>
+				<div>
+					<h:commandLink class="frasefooter" value="É empresa?" action="sobre.xhtml" />
+					<f:verbatim><br /></f:verbatim>
+					<h:commandLink class="frasefooter" value="Entre em contato" action="sobre.xhtml" />
+				</div>
+			</h:panelGrid>
+		</h:form>
+	</div>
+	<!-- FIM RODAPÉ	-->
+
+</h:body>
+</html>

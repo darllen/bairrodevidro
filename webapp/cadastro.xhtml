@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<h:outputStylesheet library="css" name="cadastro.css" />
+	<title>Cadastro</title>
+	<h:outputStylesheet library="imagens" name="icone1.png" />
+</h:head>
+
+<h:body>
+	<div class="nav">
+		<div class="opcoes-nav">
+			<h:form>
+				<h:panelGrid styleClass="lista" columns="4">
+					<h:graphicImage styleClass="logo" library="imagens" name="logo-cortada.png" />
+					<h:commandButton styleClass="efeito" value="home" action="home.xhtml" />
+					<h:commandButton styleClass="efeito" value="login" action="login.xhtml" />
+					<h:commandButton styleClass="efeito" value="sobre" action="sobre.xhtml" />
+				</h:panelGrid>
+			</h:form>
+		</div>
+    </div>
+
+	<div class="container">
+		<div class="content first-content">
+
+			<div class="first-column">
+				<h2 class="title">Bem vindo de volta!</h2>
+				<h:outputText styleClass="description" value="Para conectar-se novamente" />
+				<f:verbatim><br /></f:verbatim>
+				<h:outputText styleClass="description" value="por favor, efetue o login" />
+				<h:form id="form">
+					<h:commandButton styleClass="botaologin bot" value="Entrar" />
+				</h:form>
+			</div>
+
+			<div class="second-column">
+				<h2 class="title">Criar Conta</h2>
+				<h:outputText styleClass="tittle" value="Informe os dados a seguir: " />
+				<f:verbatim><br /></f:verbatim>
+				<div class="formulario">
+					<h:form action="home.xhtml">
+						<h:panelGrid columns="4" >
+							<h:outputLabel styleClass="dados" value="Nome: " />
+							<h:inputText styleClass="nomeinput" maxlength="15" size="20" value="#{clienteMB.cadastro.nome}"/>
+							<h:outputLabel styleClass="dados" value="Sobrenome: " />
+							<h:inputText styleClass="sobrenomeinput" maxlength="15" size="20" value="#{clienteMB.cadastro.sobrenome}"/>
+							<h:outputLabel styleClass="dados" value="Email: " />
+							<h:inputText maxlength="15" size="20" value="#{clienteMB.cadastro.email}"/>
+							<h:outputLabel styleClass="dados" value="CPF " />
+							<h:inputText styleClass="cpfinput" maxlength="15" size="20" value="#{clienteMB.cadastro.cpf}"/>
+							<h:outputLabel styleClass="dados" value="Senha: " />
+							<h:inputSecret styleClass="senhainput" maxlength="15" size="20" value="#{clienteMB.cadastro.senha}"/>
+							<h:outputLabel styleClass="dados" value="Repita senha: " />
+							<h:inputSecret maxlength="15" size="20" />
+
+							<h:commandButton styleClass="botaocriar" value="CRIAR" action="#{clienteMB.add}"/>
+						</h:panelGrid>
+					</h:form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</h:body>
+</html>

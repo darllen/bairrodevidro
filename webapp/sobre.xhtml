@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<h:outputStylesheet library="css" name="sobre.css" />
+	<title>Sobre</title>
+	<h:outputStylesheet library="imagens" name="icone1.png" />
+</h:head>
+<h:body>
+	<div class="opcoes-nav">
+		<h:graphicImage styleClass="logonav" library="imagens"
+			name="logo-cortada.png" />
+		<h:panelGrid styleClass="lista" columns="3">
+			<h:form>
+				<h:commandLink styleClass="efeito" value="home" action="home.xhtml" />
+				<h:commandLink styleClass="efeito" value="login"
+					action="login.xhtml" />
+				<h:commandLink styleClass="efeito" value="sobre"
+					action="sobre.xhtml" />
+			</h:form>
+		</h:panelGrid>
+	</div>
+	<div class="main">
+		<div class="topo-pag">
+			<div class="title">Sobre o projeto</div>
+		</div>
+
+		<div id="fotos-projetos">
+			<h:graphicImage styleClass="foto" library="imagens"
+				name="rede-cidada-logo.jpg" />
+			<h:graphicImage styleClass="foto" library="imagens"
+				name="acc-logo.png" />
+			<h:graphicImage styleClass="foto" library="imagens"
+				name="start-logo.jfif" />
+			<h:graphicImage styleClass="foto" library="imagens"
+				name="logo-cortada1.jpeg" />
+		</div>
+		<div class="container-a">
+			<div class="sobre-star">
+				<h:outputText styleClass="titulo-sobre"
+					value="Rede Cidadã e Accenture" />
+				<f:verbatim>
+					<br />
+				</f:verbatim>
+				<h:outputText styleClass="subtitulo-sobre"
+					value="Programa START Recife" />
+				<f:verbatim>
+					<br />
+				</f:verbatim>
+				<h:outputText styleClass="texto-sobre"
+					value="Feugiat cursus consequat habitant ultricies semper accumsan praesent pellentesque eleifend est, praesent conubia mi vitae sem auctor varius per praesent conubia mi vitae sem." />
+			</div>
+
+			<div class="sobre-bdevidro">
+				<h:outputText styleClass="titulo-sobre"
+					value="Projeto Bairro de Vidro" />
+				<f:verbatim>
+					<br />
+				</f:verbatim>
+				<h:outputText styleClass="subtitulo-sobre"
+					value="aplicação WEB em Java" />
+				<f:verbatim>
+					<br />
+				</f:verbatim>
+				<h:outputText styleClass="texto-sobre"
+					value="Feugiat cursus consequat habitant ultricies semper accumsan praesent pellentesque eleifend est, praesent conubia mi vitae sem auctor varius per praesent conubia mi vitae sem." />
+
+			</div>
+		</div>
+	</div>
+
+	<h2 class="desenvolvedores">Desenvolvedores</h2>
+	<div class="container-b">
+		<div class="card-individual">
+			<div class="container-bb">
+				<div class="div-foto-pessoa">
+					<h:graphicImage styleClass="foto-pessoa" library="imagens"
+						name="eduardo.jpeg" />
+				</div>
+				<div class="informacoes">
+					<h3>Eduardo José</h3>
+					<h:outputText
+						value="Amante da tecnologia com intenção de tornar o mundo mais tecnológico." />
+
+					<div class="lista-icones">
+						<h:form>
+							<h:panelGrid columns="3">
+								<h:outputLink
+									value="https://www.linkedin.com/in/eduardo-farias-jr">
+									<h:graphicImage styleClass="icon" library="imagens"
+										name="linkedin.png" />
+								</h:outputLink>
+								<h:outputLink value="https://github.com/eduardo-farias">
+									<h:graphicImage styleClass="icon" library="imagens"
+										name="github.png" />
+								</h:outputLink>
+								<h:outputLink value="mailto:edu02fariasjr@gmail.com">
+									<h:graphicImage styleClass="icon" library="imagens"
+										name="email.png" />
+								</h:outputLink>
+							</h:panelGrid>
+						</h:form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="card-individual">
+			<div class="container-bb">
+				<div class="div-foto-pessoa">
+					<h:graphicImage styleClass="foto-pessoa" library="imagens"
+						name="jamilly.jfif" />
+				</div>
+				<div class="informacoes">
+					<h3>Jamilly Anunciada</h3>
+					<h:outputText
+						value="Apaixonada pela tecnologia que transforma, sonhando com um futuro melhor." />
+					<div class="lista-icones">
+						<h:form>
+							<h:panelGrid columns="3">
+								<h:outputLink
+									value="https://www.linkedin.com/in/jamilly-anunciada-2ba39919b">
+									<h:graphicImage styleClass="icon" library="imagens"
+										name="linkedin.png" />
+								</h:outputLink>
+								<h:outputLink value="https://github.com/darllen">
+									<h:graphicImage styleClass="icon" library="imagens"
+										name="github.png" />
+								</h:outputLink>
+								<h:outputLink value="mailto:jamillymilly10@hotmail.com">
+									<h:graphicImage styleClass="icon" library="imagens"
+										name="email.png" />
+								</h:outputLink>
+							</h:panelGrid>
+						</h:form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card-individual">
+			<div class="container-bb">
+				<div class="div-foto-pessoa">
+					<h:graphicImage styleClass="foto-pessoa" library="imagens"
+						name="jenniffer.jpg" />
+				</div>
+				<div class="informacoes">
+					<h3>Jenniffer Bomfim</h3>
+
+					<h:outputText
+						value="Realizando e construindo sonhos através da tecnologia!" />
+					<div class="lista-icones">
+						<div class="outcima">
+						<h:form>
+							<h:panelGrid columns="3">
+								<h:outputLink
+									value="https://www.linkedin.com/in/jenniffer-bomfim-412379203/">
+									<h:graphicImage styleClass="icon" library="imagens"
+										name="linkedin.png" />
+								</h:outputLink>
+								<h:outputLink value="https://github.com/jenniffergg">
+									<h:graphicImage styleClass="icon" library="imagens"
+										name="github.png" />
+								</h:outputLink>
+								<h:outputLink value="mailto:jennifferbomfimrosa.2021@gmail.com">
+									<h:graphicImage styleClass="icon" library="imagens"
+										name="email.png" />
+								</h:outputLink>
+							</h:panelGrid>
+						</h:form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card-individual">
+		<div class="container-bb">
+			<div class="div-foto-pessoa">
+				<h:graphicImage styleClass="foto-pessoa" library="imagens"
+					name="juvencio.jfif" />
+			</div>
+			<div class="informacoes">
+				<h3>Matheus Juvêncio</h3>
+
+				<h:outputText
+					value="Entusiasta em tecnologia, focado na conclusão de minhas metas e sempre disposto a aprender." />
+				<div class="lista-icones">
+
+					<h:form>
+
+						<h:panelGrid columns="3">
+							<h:outputLink
+								value="https://www.linkedin.com/in/matheus-juv%C3%AAncio-915363181/">
+								<h:graphicImage styleClass="icon" library="imagens"
+									name="linkedin.png" />
+							</h:outputLink>
+							<h:outputLink value="https://github.com/Juv37">
+								<h:graphicImage styleClass="icon" library="imagens"
+									name="github.png" />
+							</h:outputLink>
+							<h:outputLink value="mailto:juvenciomaheus28@gmail.com">
+								<h:graphicImage styleClass="icon" library="imagens"
+									name="email.png" />
+							</h:outputLink>
+						</h:panelGrid>
+					</h:form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="card-individual">
+		<div class="container-bb">
+			<div class="div-foto-pessoa">
+				<h:graphicImage styleClass="foto-pessoa" library="imagens"
+					name="vinicius.jpg" />
+			</div>
+			<div class="informacoes">
+				<h3>Vinícius Silva</h3>
+
+				<h:outputText
+					value="Sempre quis compartilhar experiências e facilitar a vidas das pessoas e achei tudo isso na tecnologia." />
+
+				<div class="lista-icones">
+					<h:form>
+						<h:panelGrid columns="3">
+							<h:outputLink
+								value="https://www.linkedin.com/in/viniciusandredasilva/">
+								<h:graphicImage styleClass="icon" library="imagens"
+									name="linkedin.png" />
+							</h:outputLink>
+							<h:outputLink value="https://github.com/Viniciusilva9">
+								<h:graphicImage styleClass="icon" library="imagens"
+									name="github.png" />
+							</h:outputLink>
+							<h:outputLink value="mailto:viniciusandredasilva.2021@gmail.com">
+								<h:graphicImage styleClass="icon" library="imagens"
+									name="email.png" />
+							</h:outputLink>
+						</h:panelGrid>
+					</h:form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+
+	<div class="footer">
+
+		<h:graphicImage styleClass="logof" library="imagens"
+			name="logo-cortada.png" />
+		<h:form>
+			<div class="lista-footer">
+
+				<h:panelGrid styleClass="opcoes-footer" columns="3">
+
+					<h:commandLink styleClass="efeito-footer" value="home"
+						action="home.xhtml" />
+					<h:commandLink styleClass="efeito-footer" value="login"
+						action="login.xhtml" />
+					<h:commandLink styleClass="efeito-footer" value="sobre"
+						action="sobre.xhtml" />
+
+				</h:panelGrid>
+
+			</div>
+		</h:form>
+		<h:form styleClass="frase-footer">
+			<h:panelGrid>
+				<div>
+					<h:commandLink class="frasefooter" value="É empresa?"
+						action="sobre.xhtml" />
+					<f:verbatim>
+						<br />
+					</f:verbatim>
+					<h:commandLink class="frasefooter" value="Entre em contato"
+						action="sobre.xhtml" />
+				</div>
+			</h:panelGrid>
+		</h:form>
+
+	</div>
+</h:body>
+</html>
