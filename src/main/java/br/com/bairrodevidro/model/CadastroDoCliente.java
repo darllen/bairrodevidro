@@ -1,18 +1,19 @@
 package main.java.br.com.bairrodevidro.model;
 
+import main.java.br.com.bairrodevidro.model.domain.Cadastro;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class CadastroDoCliente {
 
-
-
 	public void criarCliente(Cadastro cadastro) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("bairrodevidro");
 		EntityManager em = emf.createEntityManager();
 
 		Cadastro novoCadastro = new Cadastro();
+
 		novoCadastro.setNome(cadastro.getNome());
 		novoCadastro.setSobrenome(cadastro.getSobrenome());
 		novoCadastro.setEmail(cadastro.getEmail());
@@ -24,11 +25,10 @@ public class CadastroDoCliente {
 		em.getTransaction().commit();
 
 		em.close();
-
 	}
 
     public void consultarCliente (Cadastro cadastro) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("bairrodevidroPU");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("bairrodevidro");
 		EntityManager em = emf.createEntityManager();
 
 		// (CLASSE ENTIDADE , VALOR DA PK)
@@ -42,7 +42,7 @@ public class CadastroDoCliente {
 			System.out.println("Usuário não encontrado!");
 		}
 		
-		//em.close();		
+		//em.close();
 	}
     
     public void atualizarCliente (Cadastro cadastro) {
@@ -61,6 +61,7 @@ public class CadastroDoCliente {
 		em.getTransaction().commit();
 		
 		System.out.println("Dados do usuário atualizados com sucesso!");
+
 		//em.close();		
 	}
     

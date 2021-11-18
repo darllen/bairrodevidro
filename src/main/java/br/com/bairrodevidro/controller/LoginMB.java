@@ -1,34 +1,35 @@
 package main.java.br.com.bairrodevidro.controller;
 
-import main.java.br.com.bairrodevidro.model.domain.Cadastro;
-import main.java.br.com.bairrodevidro.model.CadastroDoCliente;
 
+import main.java.br.com.bairrodevidro.model.Login;
+import main.java.br.com.bairrodevidro.model.LoginDoCliente;
+import main.java.br.com.bairrodevidro.model.domain.Cadastro;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.inject.Inject;
+import java.io.IOException;
 import java.io.Serializable;
 
 @ManagedBean
 @RequestScoped
-public class ClienteMB implements Serializable {
-//----------------------------------------------------------
+public class LoginMB implements Serializable{
+
     private Cadastro cadastro = new Cadastro();
 
     @Inject
-    private CadastroDoCliente cadastroDoCliente = new CadastroDoCliente();
+    private LoginDoCliente loginDoCliente = new LoginDoCliente();
 
     @PostConstruct
     public void init(){
-        System.out.println("Bean executado!");
+        System.out.println(" Bean executado! ");
     }
 
-    public void add() {
-        cadastroDoCliente.criarCliente(cadastro);
+    public void consultaLoginMB() throws IOException {
+        loginDoCliente.consultaLogin(cadastro);
     }
 
-    //  GETTER AND SETTER
     public Cadastro getCadastro() {
         return cadastro;
     }
@@ -36,8 +37,4 @@ public class ClienteMB implements Serializable {
     public void setCadastro(Cadastro cadastro) {
         this.cadastro = cadastro;
     }
-//----------------------------------------------------------
-
-
-
 }
