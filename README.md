@@ -6,7 +6,6 @@ Utilizamos:
 - Maven
 - JPA Hibernate
 - MySQL
-- Maven
 - Prime Faces
 - JSF
 
