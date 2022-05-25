@@ -4,7 +4,8 @@ A aplicação permite aos usuários interagirem entre si através de comentário
 Utilizamos:
 - Java Web
 - Maven
-- JPA Hibernate
+- JPA 
+- Hibernate
 - MySQL
 - Prime Faces
 - JSF
